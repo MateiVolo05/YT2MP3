@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-image: linear-gradient(to bottom right,#1b1b1b,#f14d4d);
+  background-attachment: fixed;
+  color: rgb(163, 154, 154);
+  overflow: hidden;
+  font-family: 'Dosis', sans-serif;
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+#form{
+  width: 600px;
+  height: 40vh;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 0px;
+}
+
+#form h1{
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 1px 1px red;
+}
+#form h4{
+  font-size:20px;
+}
+
+#form input{
+  width: 300px;
+  padding: 14px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-color:rgb(195, 24, 24);
+  border-right: 0px;
+  font-family: inherit;
+  outline: none;
+  box-shadow: 2px 2px 5px rgb(255, 156, 156);
+  font-size: 14px;
+  color:rgb(54, 45, 45);
+}
+
+#form button{
+  padding: 14px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-color:rgb(195, 24, 24);
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 2px 3px 5px rgb(255, 156, 156);
+  transition: 0.3s ease-out;
+}
+
+#form button:hover{
+  color:white;
+  background-color:red;
+  border: 1px solid red;
+  transform: scale(1.1);
+}
+
+.errors{
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 12px;
+  color: red;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+}
+
+.success{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(206, 160, 160);
+  font-size: 20px;
+}
+
+#download-btn{
+  width: fit-content;
+  color: black;
+  padding: 12px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgb(195, 24, 24);
+  font-style: normal;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: inherit;
+  border: 1px solid red;
+  transition: 0.3s ease-out;
+}
+
+#download-btn:hover{
+  color:black;
+  background-color:  white;
+  border: 1px solid  lightgray;
+  transform: scale(1.1);
+}
+
+@media(max-width:768px){
+  .bottom-container{
+    width: 90%;
+    margin: auto;
+  }
+
+  #form, .success{
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media(max-width:480px){
+  #form input{
+    width: 50%;
+  }
+}
